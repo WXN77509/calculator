@@ -7,58 +7,70 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div>
-            <div class ="logo">
-                <a href="C:Users/nzing/HTML_CSS_project/celsius/index.html"><img src="icon.jpg" alt="icon"/></a>
-                <a href="C:Users/nzing/HTML_CSS_project/guess_number/index.html"><span>Calculatrice</span></a>    
-            </div>
-            <select>
-                <option value="English">English</option>
-                <option value="Español">Español</option>
-                <option value="Français">Français</option>
-            </select>
-        </div>
+        <header>
+            <nav class="navbar">
+                <div class ="logo">
+                    <a href="C:Users/nzing/HTML_CSS_project/celsius/index.html"><img src="icon.jpg" alt="icon"/></a>
+                    <a href="C:Users/nzing/HTML_CSS_project/guess_number/index.html" id="title"><span>Calculatrice</span></a> 
+                </div>
+                <select>
+                    <option value="English">English</option>
+                    <option value="Español">Español</option>
+                    <option value="Français">Français</option>
+                </select>
+            </nav>
+        </header>
         <main>
-            <input disabled/>
             <section>
-                <div>
-                    <button>AC</button>
-                    <button class="char">7</button>
-                    <button class="char">8</button>
-                    <button class="char">9</button>
-                    <button class="char">+</button>
+                <div class="calc-result">
+                    <div id="output">55</div>
+                    <div id="input">55</div>
                 </div>
-                <div>
-                    <button>M+</button>
-                    <button class="char">4</button>
-                    <button class="char">5</button>
-                    <button class="char">6</button>
-                    <button class="char">-</button>
-                </div>
-                <div>
-                    <button>M-</button>
-                    <button class="char">1</button>
-                    <button class="char">2</button>
-                    <button class="char">3</button>
-                    <button class="char">×</button>
-                </div>
-                <div>
-                    <button>MR</button>
-                    <button class="char">0</button>
-                    <button class="char">.</button>
-                    <button class="char">±</button>
-                    <button class="char">÷</button>
-                </div>
-                <div>
-                    <button>%</button>
-                    <button>(</button>
-                    <button>)</button>
-                    <button class="char">=</button>
-                </div>
+                <section class="buttons">
+                    <div>
+                        <button id="ac">AC</button>
+                        <button class="num">7</button>
+                        <button class="num">8</button>
+                        <button class="num">9</button>
+                        <button class="sign">+</button>
+                    </div>
+                    <div>
+                        <button>M+</button>
+                        <button class="num">4</button>
+                        <button class="num">5</button>
+                        <button class="num">6</button>
+                        <button class="sign">-</button>
+                    </div>
+                    <div>
+                        <button>M-</button>
+                        <button class="num">1</button>
+                        <button class="num">2</button>
+                        <button class="num">3</button>
+                        <button class="sign">×</button>
+                    </div>
+                    <div>
+                        <button>MR</button>
+                        <button class="num">0</button>
+                        <button class="other">.</button>
+                        <button class="other">±</button>
+                        <button class="sign">÷</button>
+                    </div>
+                    <div>
+                        <button>%</button>
+                        <button>(</button>
+                        <button>)</button>
+                        <button id="equal">=</button>
+                    </div>
+                </section>
+            </section>
+            <section id="nothing">
+
             </section>
         </main>
-        <div id="results">
-            <p>Historique des calculs :</p>
+        <div class="results">
+            <div>
+                <p>Historique des calculs :</p>
+            </div>
         </div>
         <script src="script.js"></script>
     </body>
