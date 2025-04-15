@@ -14,52 +14,52 @@
                     <a href="C:Users/nzing/HTML_CSS_project/guess_number/index.html" id="title"><span>Calculatrice</span></a> 
                 </div>
                 <select>
-                    <option value="English">English</option>
-                    <option value="Español">Español</option>
-                    <option value="Français">Français</option>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
                 </select>
             </nav>
         </header>
         <main>
             <section>
                 <div class="calc-result">
-                    <div id="output">55</div>
-                    <div id="input">55</div>
+                    <div id="output"></div>
+                    <div id="input"></div>
                 </div>
                 <section class="buttons">
                     <div>
-                        <button id="ac">AC</button>
-                        <button class="num">7</button>
-                        <button class="num">8</button>
-                        <button class="num">9</button>
-                        <button class="sign">+</button>
+                        <button id="ac" onclick="ac()">AC</button>
+                        <button class="num" onclick="add('7')">7</button>
+                        <button class="num" onclick="add('8')">8</button>
+                        <button class="num" onclick="add('9')">9</button>
+                        <button class="sign" onclick="add('+')">+</button>
                     </div>
                     <div>
-                        <button>M+</button>
-                        <button class="num">4</button>
-                        <button class="num">5</button>
-                        <button class="num">6</button>
-                        <button class="sign">-</button>
+                        <button id="m-plus">M+</button>
+                        <button class="num" onclick="add('4')">4</button>
+                        <button class="num" onclick="add('5')">5</button>
+                        <button class="num" onclick="add('6')">6</button>
+                        <button class="sign" onclick="add('-')">-</button>
                     </div>
                     <div>
-                        <button>M-</button>
-                        <button class="num">1</button>
-                        <button class="num">2</button>
-                        <button class="num">3</button>
-                        <button class="sign">×</button>
+                        <button id="m-moins">M-</button>
+                        <button class="num" onclick="add('1')">1</button>
+                        <button class="num" onclick="add('2')">2</button>
+                        <button class="num" onclick="add('3')">3</button>
+                        <button class="sign" onclick="add('*')">×</button>
                     </div>
                     <div>
-                        <button>MR</button>
-                        <button class="num">0</button>
-                        <button class="other">.</button>
-                        <button class="other">±</button>
-                        <button class="sign">÷</button>
+                        <button id="m-c">MC</button>
+                        <button class="num" onclick="add('0')">0</button>
+                        <button class="other" onclick="add('.')">.</button>
+                        <button class="other" onclick="ChangeSign()">±</button>
+                        <button class="sign" onclick="add('/')">÷</button>
                     </div>
                     <div>
-                        <button>%</button>
-                        <button>(</button>
-                        <button>)</button>
-                        <button id="equal">=</button>
+                        <button onclick="add('%')">%</button>
+                        <button onclick="add('(')">(</button>
+                        <button onclick="add(')')">)</button>
+                        <button id="equal" onclick="equal()">=</button>
                     </div>
                 </section>
             </section>
@@ -70,8 +70,10 @@
         <div class="results">
             <div>
                 <p>Historique des calculs :</p>
+                <ul>
+                </ul>
             </div>
         </div>
-        <script src="script.js"></script>
+        <script type="module" src="src/script.js"></script>
     </body>
 </html>
