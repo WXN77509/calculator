@@ -23,43 +23,43 @@
         <main>
             <section>
                 <div class="calc-result">
-                    <div id="output"></div>
-                    <div id="input"></div>
+                    <div id="output">0</div>
+                    <div id="input">0</div>
                 </div>
                 <section class="buttons">
                     <div>
-                        <button id="ac" onclick="ac()">AC</button>
-                        <button class="num" onclick="add('7')">7</button>
-                        <button class="num" onclick="add('8')">8</button>
-                        <button class="num" onclick="add('9')">9</button>
-                        <button class="sign" onclick="add('+')">+</button>
+                        <button id="ac">AC</button>
+                        <button id="num-7" class="num">7</button>
+                        <button id="num-8" class="num">8</button>
+                        <button id="num-9" class="num">9</button>
+                        <button id="sign-plus" class="sign">+</button>
                     </div>
                     <div>
                         <button id="m-plus">M+</button>
-                        <button class="num" onclick="add('4')">4</button>
-                        <button class="num" onclick="add('5')">5</button>
-                        <button class="num" onclick="add('6')">6</button>
-                        <button class="sign" onclick="add('-')">-</button>
+                        <button id="num-4" class="num">4</button>
+                        <button id="num-5" class="num">5</button>
+                        <button id="num-6" class="num">6</button>
+                        <button id="sign-moins" class="sign">-</button>
                     </div>
                     <div>
                         <button id="m-moins">M-</button>
-                        <button class="num" onclick="add('1')">1</button>
-                        <button class="num" onclick="add('2')">2</button>
-                        <button class="num" onclick="add('3')">3</button>
-                        <button class="sign" onclick="add('*')">×</button>
+                        <button id="num-1" class="num">1</button>
+                        <button id="num-2" class="num">2</button>
+                        <button id="num-3" class="num">3</button>
+                        <button id="sign-fois" class="sign">×</button>
                     </div>
                     <div>
-                        <button id="m-c">MC</button>
-                        <button class="num" onclick="add('0')">0</button>
-                        <button class="other" onclick="add('.')">.</button>
-                        <button class="other" onclick="ChangeSign()">±</button>
-                        <button class="sign" onclick="add('/')">÷</button>
+                        <button id="m-r-c">MR</button>
+                        <button id="num-0" class="num">0</button>
+                        <button id="other-point" class="other">.</button>
+                        <button id="other-ChangeSign" class="other">±</button>
+                        <button id="sign-division" class="sign">÷</button>
                     </div>
                     <div>
-                        <button onclick="add('%')">%</button>
-                        <button onclick="add('(')">(</button>
-                        <button onclick="add(')')">)</button>
-                        <button id="equal" onclick="equal()">=</button>
+                        <button id="modulo">%</button>
+                        <button id="parenthese-right">(</button>
+                        <button id="parenthese-left">)</button>
+                        <button id="equal">=</button>
                     </div>
                 </section>
             </section>
@@ -74,6 +74,6 @@
                 </ul>
             </div>
         </div>
-        <script type="module" src="src/script.js"></script>
+        <script type="module" src="src/dist/script.js"></script>
     </body>
 </html>

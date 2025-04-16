@@ -1,8 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.shunting_yard = shunting_yard;
-exports.evaluate_rpn = evaluate_rpn;
-exports.calc = calc;
 const is_ascii_digit = (char) => {
     switch (char) {
         case '0':
@@ -36,7 +31,7 @@ function get_operator_priority(op) {
             return 0;
     }
 }
-function shunting_yard(token) {
+export function shunting_yard(token) {
     let operators = [];
     let output = [];
     let numbers = "";
@@ -196,7 +191,7 @@ function shunting_yard(token) {
     }
     return { value: output };
 }
-function evaluate_rpn(tokens) {
+export function evaluate_rpn(tokens) {
     let stack = [];
     for (let token of tokens) {
         switch (token) {
@@ -291,7 +286,7 @@ function evaluate_rpn(tokens) {
         return { value: null };
     }
 }
-function calc(expression) {
+export function calc(expression) {
     let x = shunting_yard(expression);
     switch (x.value) {
         case null: {
